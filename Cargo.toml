@@ -1,0 +1,12 @@
+[package]
+name = "pomodoro"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+notify-rust = "4.5.2"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
