@@ -7,7 +7,7 @@ use std::time::Duration;
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() < 3 {
-        println!("Usage pomodoro work_duration pause_duration");
+        println!("Usage pomodoro: [arg1 int] work_duration [arg2 int] break_duration");
         process::exit(1);
     }
     let work_duration: u64 = args[1]
